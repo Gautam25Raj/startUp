@@ -12,6 +12,11 @@ header {
 .circle {
   width: 8rem;
   position: absolute;
+  animation-name: zoomInOut;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
 
   &-up {
     top: 5%;
@@ -31,11 +36,21 @@ header {
   top: 20%;
   right: 0;
   z-index: 1;
+  animation-name: zoomInOut;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
 }
 
 .dots {
   position: absolute;
   width: 12rem;
+  animation-name: zoomInOut;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
 
   &-up {
     top: 16%;
@@ -57,18 +72,35 @@ header {
 
 .nav__bar {
   display: flex;
+  animation-name: leftToRight;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
 
   &--link {
     list-style: none;
-    padding-left: 3rem;
-    padding-top: 2rem;
+    margin-left: 3rem;
+    margin-top: 2rem;
     font-size: 2.5rem;
 
     & a {
-      color: #fff;
+      &,
+      &:link,
+      &:visited {
+        color: #fff;
+      }
 
-      &:hover {
-        color: red;
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 2px;
+        background: #ff6476;
+        transition: width 0.3s;
+        margin-top: 0.4rem;
+      }
+
+      &:hover::after {
+        width: 100%;
       }
     }
   }
@@ -80,6 +112,9 @@ header {
   margin-top: 15rem;
   color: #fff;
   z-index: 1;
+  animation-name: upToDown;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
 
   .cross-filled {
     width: 22rem;
@@ -122,19 +157,9 @@ header {
   margin-bottom: 1%;
   margin-right: 5%;
   z-index: 1;
-}
-
-.btn {
-  cursor: pointer;
-  border: 0.4rem solid #fff;
-  background-color: transparent;
-  text-align: center;
-  font-size: 3.5rem;
-  padding: 1rem;
-  margin-bottom: 4rem;
-  align-self: center;
-  color: #fff;
-  font-weight: 100;
+  animation-name: rightToLeft;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
 }
 
 .social ul {
@@ -145,10 +170,41 @@ header {
     margin: 2rem;
     list-style: none;
   }
-  img {
-    width: 3rem;
-  }
-}
 
-.aaa {
+  & a:hover {
+    fill: black;
+  }
+
+  svg {
+    &,
+    &:link,
+    &:visited {
+      width: 3.4rem;
+      border-radius: 5px;
+      fill: #fff;
+      padding: 0.1rem;
+      transition: background-color 0.25s transform 5s;
+    }
+  }
+
+  .facebook:hover {
+    background-color: #3b5998;
+    transform: translateY(-0.3rem) rotate(-20deg);
+  }
+
+  .insta:hover {
+    background-image: linear-gradient(
+      #8a3ab9,
+      #bc2a8d,
+      #e95950,
+      #fbad50,
+      #fccc63
+    );
+    transform: translateY(-0.3rem) rotate(-20deg);
+  }
+
+  .twitter:hover {
+    background-color: #1da1f2;
+    transform: translateY(-0.3rem) rotate(-20deg);
+  }
 }
