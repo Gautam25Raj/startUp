@@ -30,6 +30,9 @@ a {
 .btn:hover, .btn:focus {
   box-shadow: inset 6.5em 0 0 0 transparent; }
 
+.btn:active {
+  transform: translateY(-3px); }
+
 .btn--pink {
   background-color: transparent; }
   .btn--pink:hover {
@@ -154,8 +157,10 @@ header {
       background: #ff6476;
       transition: width 0.3s;
       margin-top: 0.4rem; }
-    .nav__bar--link a:hover::after {
+    .nav__bar--link a:hover::after, .nav__bar--link a:active::after {
       width: 100%; }
+    .nav__bar--link a:active::after {
+      transform: translateY(-3px); }
 
 .heading {
   position: relative;
@@ -224,3 +229,7 @@ header {
   .social ul .twitter:hover {
     background-color: #1da1f2;
     transform: translateY(-0.3rem) rotate(-20deg); }
+  .social ul .twitter:active,
+  .social ul .facebook:active,
+  .social ul .insta:active {
+    transform: translateY(-0.1rem); }

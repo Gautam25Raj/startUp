@@ -99,8 +99,13 @@ header {
         margin-top: 0.4rem;
       }
 
-      &:hover::after {
+      &:hover::after,
+      &:active::after {
         width: 100%;
+      }
+
+      &:active::after {
+        transform: translateY(-3px);
       }
     }
   }
@@ -206,5 +211,11 @@ header {
   .twitter:hover {
     background-color: #1da1f2;
     transform: translateY(-0.3rem) rotate(-20deg);
+  }
+
+  .twitter:active,
+  .facebook:active,
+  .insta:active {
+    transform: translateY(-0.1rem);
   }
 }

@@ -19,6 +19,10 @@
     box-shadow: inset 6.5em 0 0 0 transparent;
   }
 
+  &:active{
+    transform: translateY(-3px);
+  }
+
   &--pink {
     background-color: transparent;
 
