@@ -1,31 +1,22 @@
+header {
+  // background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .deco-1 {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
-
-.hero {
-  position: absolute;
-  z-index: -2;
-  height: 105vh;
-}
-
-.cross-filled {
-  width: 22rem;
-  position: absolute;
-  z-index: -1;
-  top: -23%;
-  left: 32%;
-}
-
 
 .circle {
   width: 8rem;
   position: absolute;
-  z-index: -1;
 
   &-up {
     top: 5%;
     left: 65%;
+    z-index: 1;
   }
 
   &-down {
@@ -34,12 +25,12 @@
   }
 }
 
-.square{
+.square {
   position: absolute;
   width: 12rem;
   top: 20%;
   right: 0;
-  z-index: -1;
+  z-index: 1;
 }
 
 .dots {
@@ -57,12 +48,11 @@
   }
 }
 
-
 .background {
   position: absolute;
+  height: 100vh;
   top: 0;
-  right: 0;
-  z-index: -1;
+  right: -10%;
 }
 
 .nav__bar {
@@ -86,10 +76,18 @@
 
 .heading {
   position: relative;
-  width: 100%;
   text-align: center;
   margin-top: 15rem;
   color: #fff;
+  z-index: 1;
+
+  .cross-filled {
+    width: 22rem;
+    position: absolute;
+    z-index: -1;
+    top: -23%;
+    left: 32%;
+  }
 
   &__container {
     display: inline-block;
@@ -109,7 +107,7 @@
   }
 
   &__p {
-    font-size: 2rem;
+    font-size: 1.95rem;
     text-align: right;
     margin-right: -21rem;
   }
@@ -123,6 +121,7 @@
   right: 0;
   margin-bottom: 1%;
   margin-right: 5%;
+  z-index: 1;
 }
 
 .btn {
@@ -149,4 +148,8 @@
   img {
     width: 3rem;
   }
+}
+
+.aaa{
+
 }
