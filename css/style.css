@@ -69,7 +69,7 @@ header {
   position: absolute;
   height: 100vh;
   top: 0;
-  right: 0%;
+  right: -10%;
 }
 
 .nav__bar {
