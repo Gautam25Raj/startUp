@@ -1,0 +1,163 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px 10px;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/** ************************** */
+/** Navigation Bar*/
+/** ************************** */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}
+.nav-bar__menu a {
+  font-size: 28px;
+  padding: 10px;
+}
+.nav-bar__logo h1 {
+  font-size: 60px;
+}
+
+/** ************************** */
+/** TEXT*/
+/** ************************** */
+.text {
+  width: 80%;
+  margin: 150px auto;
+  position: relative;
+}
+.text__primary {
+  display: block;
+  font-size: 100px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.text__secondary {
+  display: block;
+  font-size: 60px;
+  text-align: right;
+  padding-right: 250px;
+}
+.text__catch {
+  text-align: right;
+  font-size: 25px;
+  padding-right: 50px;
+}
+
+/** ************************** */
+/** BUTTON*/
+/** ************************** */
+.cta-bttn {
+  display: inline-block;
+  padding: 10px;
+  font-size: 35px;
+  border: 2px black solid;
+  position: absolute;
+  right: 0px;
+  bottom: -120px;
+}
+
+/** ************************** */
+/** Decorative block */
+/** ************************** */
+.rectangle-1 {
+  position: absolute;
+  height: 100vh;
+  width: 380px;
+  background: #f06998;
+  top: 0px;
+  right: 0px;
+  z-index: -1000;
+}
+
+.rectangle-2 {
+  position: absolute;
+  height: 600px;
+  width: 90px;
+  background: #f06998;
+  transform: skewY(-40deg);
+  right: 380px;
+  bottom: -35px;
+  z-index: -1000;
+}
+
+.deco-2 {
+  position: absolute;
+  top: 50px;
+  right: 500px;
+}
+
+.circle {
+  width: 50px;
+  height: 50px;
+  background: #f175a1;
+  border-radius: 50%;
+  position: relative;
+}
+.circle::before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: black 1.5px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.deco-3 {
+  position: absolute;
+  bottom: 300px;
+  left: 250px;
+}
+
+.circle-1 {
+  width: 65px;
+  height: 65px;
+  background: #f175a1;
+  border-radius: 50%;
+  position: relative;
+}
+.circle-1::before {
+  content: "";
+  width: 60px;
+  height: 60px;
+  border: black 1.5px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+.circle-1::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border: black 1.5px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+.deco-4 {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  right: 30px;
+  top: 30%;
+  background: white;
+}
+
+/*# sourceMappingURL=style.css.map */
