@@ -5,11 +5,13 @@
 @import 'base/base';
 @import 'base/typography';
 @import 'base/loading';
+@import 'base/animations';
 
 @import 'components/buttons';
+@import 'components/svgs';
 @import 'components/carousel';
 @import 'components/cursor';
-@import 'components/animations';
 @import 'components/extends';
 
+@import 'layout/navigation';
 @import 'layout/header';

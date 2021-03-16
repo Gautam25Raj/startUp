@@ -1,0 +1,67 @@
+.cross {
+  width: 22rem;
+  position: absolute;
+  z-index: -1;
+
+  &--white{
+    top: -23%;
+    left: 32%;
+  }
+}
+
+.circle {
+  width: 8rem;
+  position: absolute;
+  animation-name: zoomInOut;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+
+  &--up {
+    top: 5%;
+    left: 65%;
+    z-index: 1;
+  }
+
+  &--down {
+    top: 70%;
+    left: 10%;
+  }
+}
+
+.square {
+  position: absolute;
+  width: 12rem;
+  animation-name: zoomInOut;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+
+  &--white {
+    top: 20%;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+.dots {
+  position: absolute;
+  width: 12rem;
+  animation-name: zoomInOut;
+  animation-duration: 1s;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
+
+  &--up {
+    top: 16%;
+    right: 17.5%;
+  }
+
+  &--down {
+    bottom: -2%;
+    right: -2%;
+  }
+}

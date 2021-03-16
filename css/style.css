@@ -15,29 +15,35 @@ a {
   text-decoration: none;
   color: black; }
 
-.btn, .btn:link, .btn:visited {
-  cursor: pointer;
-  border: 0.4rem solid #fff;
+ul li {
+  list-style: none; }
+
+.heading {
+  position: relative;
   text-align: center;
-  font-size: 3.5rem;
-  padding: 1rem;
-  margin-bottom: 4rem;
-  align-self: center;
   color: #fff;
-  font-weight: 100;
-  transition: color 0.5s, box-shadow 0.5s; }
-
-.btn:hover, .btn:focus {
-  box-shadow: inset 6.5em 0 0 0 transparent; }
-
-.btn:active {
-  transform: translateY(-3px); }
-
-.btn--pink {
-  background-color: transparent; }
-  .btn--pink:hover {
-    color: #ff6476;
-    box-shadow: inset 6.5em 0 0 0 #fff; }
+  z-index: 1;
+  animation-name: upToDown;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in; }
+  .heading--header {
+    margin-top: 15rem; }
+  .heading__container {
+    display: inline-block; }
+    .heading__container h1 {
+      display: block;
+      font-size: 12rem; }
+    .heading__container--head {
+      margin-right: -20rem; }
+      .heading__container--head--1 {
+        display: block;
+        text-align: right;
+        font-size: 6rem;
+        margin-right: -8rem; }
+      .heading__container--head--2 {
+        font-size: 1.95rem;
+        text-align: right;
+        margin-right: -21rem; }
 
 @keyframes zoomInOut {
   0% {
@@ -79,14 +85,37 @@ a {
     opacity: 1;
     transform: translateX(0); } }
 
-header {
-  background-image: url(../img/hero.png);
-  background-repeat: no-repeat;
-  background-size: cover; }
+.btn, .btn:link, .btn:visited {
+  cursor: pointer;
+  border: 0.4rem solid #fff;
+  text-align: center;
+  font-size: 3.5rem;
+  padding: 1rem;
+  margin-bottom: 4rem;
+  align-self: center;
+  color: #fff;
+  font-weight: 100;
+  transition: color 0.5s, box-shadow 0.5s; }
 
-.deco-1 {
-  width: 100vw;
-  height: 100vh; }
+.btn:hover, .btn:focus {
+  box-shadow: inset 6.5em 0 0 0 transparent; }
+
+.btn:active {
+  transform: translateY(-3px); }
+
+.btn--pink {
+  background-color: transparent; }
+  .btn--pink:hover {
+    color: #ff6476;
+    box-shadow: inset 6.5em 0 0 0 #fff; }
+
+.cross {
+  width: 22rem;
+  position: absolute;
+  z-index: -1; }
+  .cross--white {
+    top: -23%;
+    left: 32%; }
 
 .circle {
   width: 8rem;
@@ -96,25 +125,26 @@ header {
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in; }
-  .circle-up {
+  .circle--up {
     top: 5%;
     left: 65%;
     z-index: 1; }
-  .circle-down {
+  .circle--down {
     top: 70%;
     left: 10%; }
 
 .square {
   position: absolute;
   width: 12rem;
-  top: 20%;
-  right: 0;
-  z-index: 1;
   animation-name: zoomInOut;
   animation-duration: 1s;
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in; }
+  .square--white {
+    top: 20%;
+    right: 0;
+    z-index: 1; }
 
 .dots {
   position: absolute;
@@ -124,18 +154,12 @@ header {
   animation-delay: 0.5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in; }
-  .dots-up {
+  .dots--up {
     top: 16%;
     right: 17.5%; }
-  .dots-down {
+  .dots--down {
     bottom: -2%;
     right: -2%; }
-
-.background {
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  right: -10%; }
 
 .nav__bar {
   display: flex;
@@ -162,36 +186,20 @@ header {
     .nav__bar--link a:active::after {
       transform: translateY(-3px); }
 
-.heading {
-  position: relative;
-  text-align: center;
-  margin-top: 15rem;
-  color: #fff;
-  z-index: 1;
-  animation-name: upToDown;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in; }
-  .heading .cross-filled {
-    width: 22rem;
-    position: absolute;
-    z-index: -1;
-    top: -23%;
-    left: 32%; }
-  .heading__container {
-    display: inline-block;
-    margin-right: -20rem; }
-  .heading--1 {
-    display: block;
-    font-size: 12rem; }
-  .heading--2 {
-    display: block;
-    text-align: right;
-    font-size: 6rem;
-    margin-right: -8rem; }
-  .heading__p {
-    font-size: 1.95rem;
-    text-align: right;
-    margin-right: -21rem; }
+header {
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.deco-1 {
+  width: 100vw;
+  height: 100vh; }
+
+.background {
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  right: -10%; }
 
 .social__conatainer {
   display: inline-flex;
@@ -210,8 +218,7 @@ header {
   display: flex;
   flex-direction: row; }
   .social ul li {
-    margin: 2rem;
-    list-style: none; }
+    margin: 2rem; }
   .social ul a:hover {
     fill: black; }
   .social ul svg, .social ul svg:link, .social ul svg:visited {
