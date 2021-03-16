@@ -11,38 +11,41 @@
     <header>
       <div class="deco-1">
         <img
+          role="presentation"
           class="circle circle--up"
           src="icon/fullCircleUp.svg"
-          alt="Circle Design"
+          alt=""
         />
         <img
+          role="presentation"
           class="circle circle--down"
           src="icon/fullCircleDown.svg"
-          alt="Circle Design"
+          alt=""
         />
         <article>
           <nav>
-            <ul class="nav__bar">
-              <li class="nav__bar--link">
-                <a href="#"> Home </a>
+            <ul role="list" class="nav__bar">
+              <li class="nav__bar__link">
+                <a class="link link--pink" href="index.html"> Home </a>
               </li>
-              <li class="nav__bar--link">
-                <a href="#"> About </a>
+              <li class="nav__bar__link">
+                <a class="link link--pink" href="aboutUs.html"> About </a>
               </li>
-              <li class="nav__bar--link">
-                <a href="#"> Gallery </a>
+              <li class="nav__bar__link">
+                <a class="link link--pink" href="#"> Gallery </a>
               </li>
-              <li class="nav__bar--link">
-                <a href="#"> Contact </a>
+              <li class="nav__bar__link">
+                <a class="link link--pink" href="#"> Contact </a>
               </li>
             </ul>
           </nav>
 
           <div class="heading heading--header">
             <img
+              role="presentation"
               class="cross cross--white"
               src="icon/fullCross.svg"
-              alt="Multiplication Image"
+              alt=""
             />
             <div class="heading__container heading__container--head">
               <h1>
@@ -59,15 +62,17 @@
           </div>
         </article>
 
-        <div class="social__conatainer">
+        <div class="social__conatainer social__conatainer--big">
           <button class="btn btn--pink">Read More</button>
           <div class="social">
             <nav>
-              <ul>
+              <ul role="list">
                 <li class="social__link">
                   <a href="#">
                     <!-- <img class="facebook" src="icon/facebook.svg" alt="Facebook Link" /> -->
                     <svg
+                      role="img presentation"
+                      aria-labelledby="facebook_svg"
                       class="facebook"
                       viewBox="0 0 128 128"
                       xmlns="http://www.w3.org/2000/svg"
@@ -76,6 +81,7 @@
                       stroke-linejoin="round"
                       stroke-miterlimit="1.414"
                     >
+                      <title id="facebook_svg">facebook Icon</title>
                       <path
                         d="M94.714 46.196H73.627V31.938c0-3.926 3.149-7.116 7.024-7.116h7.025V7.025h-14.05c-11.652 0-21.1 9.557-21.1 21.361v17.81H38.465v17.798h14.063v56.981h21.1V63.994h14.05l7.037-17.798z"
                         fill-rule="nonzero"
@@ -87,6 +93,8 @@
                   <a href="#">
                     <!-- <img class="insta" src="icon/insta.svg" alt="Instagram Link" /> -->
                     <svg
+                      role="img presentation"
+                      aria-labelledby="insta_svg"
                       class="insta"
                       viewBox="0 0 128 128"
                       xmlns="http://www.w3.org/2000/svg"
@@ -95,6 +103,7 @@
                       stroke-linejoin="round"
                       stroke-miterlimit="1.414"
                     >
+                      <title id="insta_svg">Instagram Icon</title>
                       <path
                         d="M64 82.648c-8.809 0-15.97-7.419-15.97-16.544 0-9.115 7.161-16.545 15.97-16.545 8.798 0 15.97 7.43 15.97 16.545 0 9.125-7.172 16.544-15.97 16.544m0-41.774c-13.43 0-24.354 11.316-24.354 25.23 0 13.913 10.923 25.23 24.354 25.23 13.43 0 24.354-11.317 24.354-25.23 0-13.914-10.923-25.23-24.354-25.23"
                         fill-rule="nonzero"
@@ -114,6 +123,8 @@
                   <a href="#">
                     <!-- <img class="twitter" src="icon/twitter.svg" alt="Twitter Link" /> -->
                     <svg
+                      role="img presentation"
+                      aria-labelledby="twitter_svg"
                       class="twitter"
                       viewBox="0 0 128 128"
                       xmlns="http://www.w3.org/2000/svg"
@@ -122,6 +133,7 @@
                       stroke-linejoin="round"
                       stroke-miterlimit="1.414"
                     >
+                      <title id="twitter_svg">Twitter Icon</title>
                       <path
                         d="M118.129 29.803c-4.178 1.876-8.633 3.113-13.273 3.71a23.23 23.23 0 0010.122-12.994c-4.445 2.714-9.362 4.631-14.598 5.69-4.24-4.59-10.265-7.44-16.825-7.44-12.76 0-23.025 10.573-23.025 23.526 0 1.865.144 3.657.524 5.365-19.155-.953-36.093-10.322-47.487-24.605-1.982 3.52-3.142 7.555-3.142 11.894 0 8.153 4.096 15.363 10.225 19.544-3.696-.063-7.33-1.174-10.41-2.892v.251c0 11.423 7.997 20.927 18.458 23.118-1.879.513-3.922.775-6.036.775-1.468 0-2.967-.094-4.363-.409 2.977 9.306 11.456 16.17 21.526 16.38-7.842 6.266-17.79 10.028-28.558 10.028-1.899 0-3.706-.083-5.512-.314 10.203 6.717 22.296 10.553 35.333 10.553 42.396 0 65.575-35.85 65.575-66.922 0-1.048-.031-2.043-.082-3.05 4.568-3.3 8.407-7.44 11.548-12.208"
                         fill="#fff"
@@ -136,6 +148,8 @@
         </div>
 
         <svg
+          role="img presentation"
+          aria-labelledby="background"
           class="background"
           width="400"
           height="auto"
@@ -152,6 +166,7 @@
             stroke-miterlimit: 2;
           "
         >
+          <title id="background">Decorative Background</title>
           <g
             transform="matrix(760.463,1304.21,1461.29,-852.052,-91.1417,-55.5891)"
           >
@@ -183,13 +198,28 @@
         </svg>
 
         <img
+          role="presentation"
           class="square square--white"
           src="icon/Square.svg"
-          alt="Square Design"
+          alt=""
         />
-        <img class="dots dots--down" src="icon/Dots.svg" alt="Background Upper Dots" />
-        <img class="dots dots--up" src="icon/Dots.svg" alt="Background Lower Dots" />
+        <img
+          role="presentation"
+          class="dots dots--down"
+          src="icon/Dots.svg"
+          alt=""
+        />
+        <img
+          role="presentation"
+          class="dots dots--up"
+          src="icon/Dots.svg"
+          alt=""
+        />
       </div>
     </header>
+
+    <section>
+      <div></div>
+    </section>
   </body>
 </html>

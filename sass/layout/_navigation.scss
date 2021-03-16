@@ -4,17 +4,18 @@
   animation-duration: 0.8s;
   animation-timing-function: ease-in;
 
-  &--link {
+  &__link {
     list-style: none;
     margin-left: 3rem;
     margin-top: 2rem;
     font-size: 2.5rem;
 
-    & a {
+    .link {
       &,
       &:link,
       &:visited {
         color: #fff;
+        transition: color 0.3s;
       }
 
       &::after {
@@ -22,7 +23,7 @@
         display: block;
         width: 0;
         height: 2px;
-        background: #ff6476;
+        background: #fff;
         transition: width 0.3s;
         margin-top: 0.4rem;
       }
@@ -34,6 +35,28 @@
 
       &:active::after {
         transform: translateY(-3px);
+      }
+
+      &--pink {
+        &:hover {
+          color: #ff6476;
+        }
+        & {
+          &::after {
+            background: #ff6476;
+          }
+        }
+      }
+
+      &--green {
+        &:hover {
+          color: #76ff64;
+        }
+        & {
+          &::after {
+            background: #76ff64;
+          }
+        }
       }
     }
   }

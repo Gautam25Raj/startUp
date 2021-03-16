@@ -9,6 +9,9 @@ html {
   font-size: 62.5%; }
 
 body {
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
   overflow: hidden; }
 
 a {
@@ -166,30 +169,37 @@ ul li {
   animation-name: leftToRight;
   animation-duration: 0.8s;
   animation-timing-function: ease-in; }
-  .nav__bar--link {
+  .nav__bar__link {
     list-style: none;
     margin-left: 3rem;
     margin-top: 2rem;
     font-size: 2.5rem; }
-    .nav__bar--link a, .nav__bar--link a:link, .nav__bar--link a:visited {
-      color: #fff; }
-    .nav__bar--link a::after {
+    .nav__bar__link .link, .nav__bar__link .link:link, .nav__bar__link .link:visited {
+      color: #fff;
+      transition: color 0.3s; }
+    .nav__bar__link .link::after {
       content: "";
       display: block;
       width: 0;
       height: 2px;
-      background: #ff6476;
+      background: #fff;
       transition: width 0.3s;
       margin-top: 0.4rem; }
-    .nav__bar--link a:hover::after, .nav__bar--link a:active::after {
+    .nav__bar__link .link:hover::after, .nav__bar__link .link:active::after {
       width: 100%; }
-    .nav__bar--link a:active::after {
+    .nav__bar__link .link:active::after {
       transform: translateY(-3px); }
+    .nav__bar__link .link--pink:hover {
+      color: #ff6476; }
+    .nav__bar__link .link--pink::after {
+      background: #ff6476; }
+    .nav__bar__link .link--green:hover {
+      color: #76ff64; }
+    .nav__bar__link .link--green::after {
+      background: #76ff64; }
 
 header {
-  background-image: url(../img/hero.png);
-  background-repeat: no-repeat;
-  background-size: cover; }
+  overflow: hidden; }
 
 .deco-1 {
   width: 100vw;
@@ -204,29 +214,28 @@ header {
 .social__conatainer {
   display: inline-flex;
   flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 1%;
-  margin-right: 5%;
-  z-index: 1;
-  animation-name: rightToLeft;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in; }
+  position: absolute; }
+  .social__conatainer--big {
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    z-index: 1;
+    animation-name: rightToLeft;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in; }
 
 .social ul {
   display: flex;
   flex-direction: row; }
   .social ul li {
     margin: 2rem; }
-  .social ul a:hover {
-    fill: black; }
   .social ul svg, .social ul svg:link, .social ul svg:visited {
     width: 3.4rem;
     border-radius: 5px;
     fill: #fff;
     padding: 0.1rem;
-    transition: background-color 0.25s transform 5s; }
+    transition: background-color 0.25s; }
   .social ul .facebook:hover {
     background-color: #3b5998;
     transform: translateY(-0.3rem) rotate(-20deg); }

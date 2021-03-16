@@ -1,7 +1,5 @@
-header {
-  background-image: url(../img/hero.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+header{
+  overflow: hidden;
 }
 
 .deco-1 {
@@ -20,14 +18,17 @@ header {
   display: inline-flex;
   flex-direction: column;
   position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 1%;
-  margin-right: 5%;
-  z-index: 1;
-  animation-name: rightToLeft;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in;
+
+  &--big{
+    bottom: 0;
+    right: 0;
+    margin-bottom: 1%;
+    margin-right: 5%;
+    z-index: 1;
+    animation-name: rightToLeft;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-in;
+  }
 }
 
 .social ul {
@@ -38,10 +39,6 @@ header {
     margin: 2rem;
   }
 
-  & a:hover {
-    fill: black;
-  }
-
   svg {
     &,
     &:link,
@@ -50,7 +47,7 @@ header {
       border-radius: 5px;
       fill: #fff;
       padding: 0.1rem;
-      transition: background-color 0.25s transform 5s;
+      transition: background-color 0.25s;
     }
   }
 
