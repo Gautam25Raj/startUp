@@ -43,6 +43,13 @@
     top: 70%;
     left: 10%;
   }
+
+  //CIRCLE IN UPPER DIRECTION
+  &--about--up {
+    top: 10%;
+    left: 65%;
+    z-index: 1;
+  }
 }
 
 //SQUARE SVG
@@ -60,6 +67,13 @@
     right: 0;
     z-index: 1;
   }
+
+  &--about--white {
+    width: 9rem;
+    top: 50%;
+    right: 21%;
+    z-index: 1;
+  }
 }
 
 //DOTS SVG
@@ -72,19 +86,39 @@
   animation-fill-mode: backwards;
   animation-timing-function: ease-in;
 
-  //DOTS IN UPPER DIRECTION
+  //DOTS IN HOME UPPER DIRECTION
   &--up {
     top: 16%;
     right: 17.5%;
   }
 
-  //DOTS IN LOWER DIRECTION
+  //DOTS IN HOME LOWER DIRECTION
   &--down {
     bottom: -2%;
     right: -2%;
   }
+
+  //DOTS IN ABOUT UP
+  &--about--up {
+    left: 46%;
+    top: 56%;
+  }
+
+  //DOTS IN ABOUT DOWN
+  &--about--down {
+    width: 16rem;
+    right: 0;
+    bottom: 0;
+  }
 }
 
+.message-box {
+  width: 17rem;
+  transform: skewX(15deg);
+  position: absolute;
+  top: -10rem;
+  left: 50%;
+}
 
 /////////////////////////////////////////////////
 ///////// MEDIA QUERRIES

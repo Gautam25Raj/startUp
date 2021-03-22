@@ -18,6 +18,8 @@
 
   //ABOUT HEADING WITH CROSS
   &--about {
+    top: -1rem;
+    left: 2rem;
   }
 
   /////////////////////////////////////////////////
@@ -28,11 +30,11 @@
 
     & h1 {
       display: block;
+      font-size: 12rem;
     }
 
     //HEADER HEADING
     &--head {
-      font-size: 12rem;
       margin-right: -20rem;
 
       //HEADING SPAN
@@ -53,7 +55,7 @@
 
     //ABOUT US HEADER
     &--about h1{
-      font-size: 10rem;
+      font-size: 12rem;
       font-family: sans-serif;
       font-weight: 900;
     }
