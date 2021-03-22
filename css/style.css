@@ -24,20 +24,20 @@ ul li {
 .heading {
   position: relative;
   color: #fff;
-  text-align: center;
   z-index: 1;
   animation-name: upToDown;
   animation-duration: 0.8s;
   animation-timing-function: ease-in; }
   .heading--header {
+    text-align: center;
     margin-top: 18rem;
     left: -10vw; }
   .heading__container {
     display: inline-block; }
     .heading__container h1 {
-      display: block;
-      font-size: 12rem; }
+      display: block; }
     .heading__container--head {
+      font-size: 12rem;
       margin-right: -20rem; }
       .heading__container--head--1 {
         display: block;
@@ -48,6 +48,10 @@ ul li {
         font-size: 1.95rem;
         text-align: right;
         margin-right: -21rem; }
+    .heading__container--about h1 {
+      font-size: 10rem;
+      font-family: sans-serif;
+      font-weight: 900; }
 
 @media (max-width: 1350px) {
   .heading__container h1 {
@@ -130,7 +134,7 @@ ul li {
     left: 12.9rem; }
   .cross--green {
     top: 5rem;
-    left: 14rem; }
+    left: 12rem; }
 
 .circle {
   width: 8rem;
@@ -236,6 +240,10 @@ ul li {
     .nav__bar__link .link, .nav__bar__link .link:link, .nav__bar__link .link:visited {
       color: #fff;
       transition: color 0.3s; }
+    .nav__bar__link .link--pink--active, .nav__bar__link .link--pink--active:link, .nav__bar__link .link--pink--active:visited {
+      color: #ff6476; }
+    .nav__bar__link .link--green--active, .nav__bar__link .link--green--active:link, .nav__bar__link .link--green--active:visited {
+      color: #76ff64; }
     .nav__bar__link .link::after {
       content: "";
       display: block;
@@ -279,16 +287,15 @@ ul li {
 .social__conatainer {
   display: inline-flex;
   flex-direction: column;
-  position: absolute; }
-  .social__conatainer--big {
-    bottom: 0;
-    right: 0;
-    margin-bottom: 1%;
-    margin-right: 5%;
-    z-index: 1;
-    animation-name: rightToLeft;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in; }
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 1%;
+  margin-right: 5%;
+  z-index: 1;
+  animation-name: rightToLeft;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in; }
 
 .social ul {
   display: flex;

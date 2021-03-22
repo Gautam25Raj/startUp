@@ -1,33 +1,37 @@
+/////////////////////////////////////////////////
+///////// HEADER
+/////////////////////////////////////////////////
 .deco-1 {
   width: 100vw;
   height: 100vh;
 }
 
+//SOCIAL LINK AND BUTTON CONTAINER
 .social__conatainer {
   display: inline-flex;
   flex-direction: column;
   position: absolute;
-
-  &--big {
-    bottom: 0;
-    right: 0;
-    margin-bottom: 1%;
-    margin-right: 5%;
-    z-index: 1;
-    animation-name: rightToLeft;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in;
-  }
+  bottom: 0;
+  right: 0;
+  margin-bottom: 1%;
+  margin-right: 5%;
+  z-index: 1;
+  animation-name: rightToLeft;
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in;
 }
 
+//CONTAINER OF SOCIAL LINKS
 .social ul {
   display: flex;
   flex-direction: row;
 
+  //EACH SOCIAL ELEMENT
   & li {
     margin: 2rem;
   }
 
+  //SVG SOCIAL LINK ELEMENTS
   svg {
     &,
     &:link,
@@ -40,11 +44,13 @@
     }
   }
 
+  //FACEBOOK HOVERED
   .facebook:hover {
     background-color: #3b5998;
     transform: translateY(-0.3rem) rotate(-20deg);
   }
 
+  //INSTAGRAM HOVERED
   .insta:hover {
     background-image: linear-gradient(
       #8a3ab9,
@@ -56,11 +62,13 @@
     transform: translateY(-0.3rem) rotate(-20deg);
   }
 
+  //TWITTER HOVERED
   .twitter:hover {
     background-color: #1da1f2;
     transform: translateY(-0.3rem) rotate(-20deg);
   }
 
+  //SOCIAL WHEN CLICKED
   .twitter:active,
   .facebook:active,
   .insta:active {
@@ -68,6 +76,9 @@
   }
 }
 
+/////////////////////////////////////////////////
+///////// MEDIA QUERRIES
+/////////////////////////////////////////////////
 @include respond(1350) {
   .social__conatainer {
     &--big {

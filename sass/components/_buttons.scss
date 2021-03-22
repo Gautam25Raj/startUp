@@ -1,4 +1,9 @@
+/////////////////////////////////////////////////
+///////// COMMON BUTTON STYLE
+/////////////////////////////////////////////////
 .btn {
+
+  //WHEN BUTTON IS IS NORMAL STATE
   &,
   &:link,
   &:visited {
@@ -14,15 +19,18 @@
     transition: color 0.5s, box-shadow 0.5s;
   }
 
+  //WHEN BUTTON IS HOVERED AND FOCUSED
   &:hover,
   &:focus {
     box-shadow: inset 6.5em 0 0 0 transparent;
   }
 
+  //WHEN BUTTON IS CLICKED
   &:active {
     transform: translateY(-3px);
   }
 
+  //HEADER BUTTON
   &--pink {
     background-color: transparent;
 
@@ -33,6 +41,9 @@
   }
 }
 
+/////////////////////////////////////////////////
+///////// MEDIA QUERRIES
+/////////////////////////////////////////////////
 @include respond(1350) {
   .btn--pink {
     font-size: 3.2rem;

@@ -1,19 +1,27 @@
+/////////////////////////////////////////////////
+///////// ALL SVGS SETTING
+/////////////////////////////////////////////////
+
+//CROSS SVG USED IN HEADING BACK OF EVERY PAGE
 .cross {
   width: 22rem;
   position: relative;
   z-index: -1;
 
+  //CROSS SVG USED IN HEADING BACK OF HOME PAGE
   &--pink {
     top: -8.5rem;
     left: 12.9rem;
   }
 
+  //CROSS SVG USED IN HEADING BACK OF ABOUT US PAGE
   &--green {
     top: 5rem;
-    left: 14rem;
+    left: 12rem;
   }
 }
 
+//CIRCLE SVG
 .circle {
   width: 8rem;
   position: absolute;
@@ -23,18 +31,21 @@
   animation-fill-mode: backwards;
   animation-timing-function: ease-in;
 
+  //CIRCLE IN UPPER DIRECTION
   &--up {
     top: 5%;
     left: 65%;
     z-index: 1;
   }
 
+  //CIRCLE IN LOWER DIRECTION
   &--down {
     top: 70%;
     left: 10%;
   }
 }
 
+//SQUARE SVG
 .square {
   position: absolute;
   width: 12rem;
@@ -51,6 +62,7 @@
   }
 }
 
+//DOTS SVG
 .dots {
   position: absolute;
   width: 12rem;
@@ -60,17 +72,23 @@
   animation-fill-mode: backwards;
   animation-timing-function: ease-in;
 
+  //DOTS IN UPPER DIRECTION
   &--up {
     top: 16%;
     right: 17.5%;
   }
 
+  //DOTS IN LOWER DIRECTION
   &--down {
     bottom: -2%;
     right: -2%;
   }
 }
 
+
+/////////////////////////////////////////////////
+///////// MEDIA QUERRIES
+/////////////////////////////////////////////////
 @include respond(1350) {
   .cross {
     width: 21rem;
@@ -120,14 +138,14 @@
 }
 
 @include respond(1050) {
-  .circle{
+  .circle {
     width: 7.5rem;
 
     &--up {
       top: 12%;
       left: 50%;
     }
-  
+
     &--down {
       top: 74%;
       left: 8%;
@@ -141,7 +159,7 @@
       top: 18%;
       right: 24%;
     }
-  
+
     &--down {
       bottom: -2%;
       right: -2.8%;
@@ -150,11 +168,10 @@
 
   .square {
     width: 10rem;
-  
+
     &--white {
       top: 28%;
       right: 4rem;
     }
   }
 }
-

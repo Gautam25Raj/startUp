@@ -1,15 +1,22 @@
+/////////////////////////////////////////////////
+///////// MAIN NAVIGATION STYLE
+/////////////////////////////////////////////////
+
+//CONATAINER OF LINKS (UL ELEMENT)
 .nav__bar {
   display: flex;
   animation-name: leftToRight;
   animation-duration: 0.8s;
   animation-timing-function: ease-in;
 
+  //CONTAINER OF EACH LINK (LI ELEMENT)
   &__link {
     list-style: none;
     margin-left: 3.2rem;
     margin-top: 2rem;
     font-size: 2.5rem;
 
+    //STYLE OF EVERY LINK (ANCHOR TAG)
     .link {
       &,
       &:link,
@@ -18,6 +25,25 @@
         transition: color 0.3s;
       }
 
+      //WHEN HOME PAGE IS ACTIVE
+      &--pink--active {
+        &,
+        &:link,
+        &:visited {
+          color: #ff6476;
+        }
+      }
+
+      //WHEN ABOUT US PAGE IS ACTIVE
+      &--green--active {
+        &,
+        &:link,
+        &:visited {
+          color: #76ff64;
+        }
+      }
+
+      //LINE BELOW EVERY LINKS
       &::after {
         content: "";
         display: block;
@@ -37,10 +63,12 @@
         transform: translateY(-3px);
       }
 
+      //COLOR OF LINKS WHEN HOVERED IN HOME PAGE
       &--pink {
         &:hover {
           color: #ff6476;
         }
+
         & {
           &::after {
             background: #ff6476;
@@ -48,10 +76,12 @@
         }
       }
 
+      //COLOR OF LINKS WHEN HOVERED IN ABOUT US PAGE
       &--green {
         &:hover {
           color: #76ff64;
         }
+
         & {
           &::after {
             background: #76ff64;
@@ -62,6 +92,9 @@
   }
 }
 
+/////////////////////////////////////////////////
+///////// MEDIA QUERRIES
+/////////////////////////////////////////////////
 @include respond(1350) {
   .nav__bar {
     &__link {
