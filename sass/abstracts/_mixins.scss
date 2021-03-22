@@ -10,7 +10,6 @@
       @content;
     }
   }
-
   
   @if $breakpoint == 1050 {
     @media (max-width: 1050px) {

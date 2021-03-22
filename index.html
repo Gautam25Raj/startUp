@@ -9,7 +9,7 @@
   </head>
   <body>
     <header>
-      <div class="deco-1">
+      <section class="deco-1">
         <img
           role="presentation"
           class="dots dots--down"
@@ -41,9 +41,9 @@
           alt=""
         />
 
-        <article>
-          <nav>
-            <ul role="list" class="nav__bar">
+        <div>
+          <nav aria-label="main">
+            <ul class="nav__bar">
               <li class="nav__bar__link">
                 <a class="link link--pink" href="index.html"> Home </a>
               </li>
@@ -78,19 +78,19 @@
               </p>
             </div>
           </div>
-        </article>
+        </div>
 
         <div class="social__conatainer social__conatainer--big">
           <button class="btn btn--pink">Read More</button>
           <div class="social">
-            <nav>
-              <ul role="list">
+            <nav aria-label="social">
+              <ul>
                 <li class="social__link">
                   <a href="#">
-                    <!-- <img class="facebook" src="icon/facebook.svg" alt="Facebook Link" /> -->
                     <svg
-                      role="img presentation"
+                      role="img"
                       aria-labelledby="facebook_svg"
+                      aria-hidden="true"
                       class="facebook"
                       viewBox="0 0 128 128"
                       xmlns="http://www.w3.org/2000/svg"
@@ -109,10 +109,10 @@
                 </li>
                 <li class="social__link">
                   <a href="#">
-                    <!-- <img class="insta" src="icon/insta.svg" alt="Instagram Link" /> -->
                     <svg
-                      role="img presentation"
+                      role="img"
                       aria-labelledby="insta_svg"
+                      aria-hidden="true"
                       class="insta"
                       viewBox="0 0 128 128"
                       xmlns="http://www.w3.org/2000/svg"
@@ -139,10 +139,10 @@
                 </li>
                 <li class="social__link">
                   <a href="#">
-                    <!-- <img class="twitter" src="icon/twitter.svg" alt="Twitter Link" /> -->
                     <svg
-                      role="img presentation"
+                      role="img"
                       aria-labelledby="twitter_svg"
+                      aria-hidden="true"
                       class="twitter"
                       viewBox="0 0 128 128"
                       xmlns="http://www.w3.org/2000/svg"
@@ -164,7 +164,7 @@
             </nav>
           </div>
         </div>
-      </div>
+      </section>
     </header>
   </body>
 </html>
