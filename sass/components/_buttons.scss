@@ -19,7 +19,7 @@
     box-shadow: inset 6.5em 0 0 0 transparent;
   }
 
-  &:active{
+  &:active {
     transform: translateY(-3px);
   }
 
@@ -29,6 +29,25 @@
     &:hover {
       color: #ff6476;
       box-shadow: inset 6.5em 0 0 0 #fff;
+    }
+  }
+}
+
+@include respond(1350) {
+  .btn--pink {
+    font-size: 3.2rem;
+  }
+}
+
+@include respond(1200) {
+  .btn {
+    &,
+    &:link,
+    &:visited {
+      margin-bottom: 3rem;
+    }
+    &--pink {
+      font-size: 3rem;
     }
   }
 }

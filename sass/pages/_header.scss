@@ -1,17 +1,6 @@
-header{
-  overflow: hidden;
-}
-
 .deco-1 {
   width: 100vw;
   height: 100vh;
-}
-
-.background {
-  position: absolute;
-  height: 100vh;
-  top: 0;
-  right: -10%;
 }
 
 .social__conatainer {
@@ -19,7 +8,7 @@ header{
   flex-direction: column;
   position: absolute;
 
-  &--big{
+  &--big {
     bottom: 0;
     right: 0;
     margin-bottom: 1%;
@@ -76,5 +65,35 @@ header{
   .facebook:active,
   .insta:active {
     transform: translateY(-0.1rem);
+  }
+}
+
+@include respond(1350) {
+  .social__conatainer {
+    &--big {
+      margin-right: 6%;
+    }
+  }
+
+  .social ul {
+    & li {
+      margin: 1.5rem;
+    }  
+
+    svg {
+      &,
+      &:link,
+      &:visited {
+        width: 3.2rem;
+      }
+    }
+  }
+}
+
+@include respond(1350) {
+  .social__conatainer {
+    &--big {
+      margin-bottom: 1.5%;
+    }
   }
 }

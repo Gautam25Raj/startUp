@@ -11,10 +11,10 @@ html {
 }
 
 body {
+  overflow: hidden;
   background-image: url(../img/hero.png);
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
 }
 
 a {
@@ -22,6 +22,6 @@ a {
   color: black;
 }
 
-ul li{
+ul li {
   list-style: none;
 }

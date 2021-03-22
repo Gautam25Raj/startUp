@@ -6,7 +6,7 @@
 
   &__link {
     list-style: none;
-    margin-left: 3rem;
+    margin-left: 3.2rem;
     margin-top: 2rem;
     font-size: 2.5rem;
 
@@ -58,6 +58,33 @@
           }
         }
       }
+    }
+  }
+}
+
+@include respond(1350) {
+  .nav__bar {
+    &__link {
+      margin-left: 3rem;
+      font-size: 2.4rem;
+    }
+  }
+}
+
+@include respond(1200) {
+  .nav__bar {
+    &__link {
+      margin-left: 2.8rem;
+      font-size: 2.35rem;
+    }
+  }
+}
+
+@include respond(1050) {
+  .nav__bar {
+    &__link {
+      margin-left: 2.5rem;
+      font-size: 2.3rem;
     }
   }
 }

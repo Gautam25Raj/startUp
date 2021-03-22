@@ -3,8 +3,8 @@
 /////////////////////////////////////////////////
 .heading {
   position: relative;
-  text-align: center;
   color: #fff;
+  text-align: center;
   z-index: 1;
   animation-name: upToDown;
   animation-duration: 0.8s;
@@ -12,7 +12,8 @@
 
   //HEADER HEADING WITH CROSS
   &--header {
-    margin-top: 15rem;
+    margin-top: 18rem;
+    left: -10vw;
   }
 
   //ABOUT HEADING WITH CROSS
@@ -49,8 +50,84 @@
         margin-right: -21rem;
       }
     }
+  }
+}
 
-    
+@include respond(1350) {
+  .heading {
+    &__container {
+      & h1 {
+        font-size: 11.5rem;
+      }
 
+      &--head {
+        margin-right: -4rem;
+
+        &--1 {
+          font-size: 5.5rem;
+          margin-right: -6rem;
+        }
+
+        &--2 {
+          font-size: 1.9rem;
+          margin-right: -19rem;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond(1200) {
+  .heading {
+    &--header {
+      margin-top: 20rem;
+    }
+
+    &__container {
+      & h1 {
+        font-size: 11rem;
+      }
+
+      &--head {
+        margin-right: 0;
+
+        &--1 {
+          font-size: 5rem;
+        }
+
+        &--2 {
+          font-size: 1.7rem;
+          margin-right: -18rem;
+        }
+      }
+    }
+  }
+}
+
+@include respond(1050) {
+  .heading {
+    &--header {
+      margin-top: 20rem;
+    }
+
+    &__container {
+      & h1 {
+        font-size: 11rem;
+      }
+
+      &--head {
+        margin-right: 12rem;
+
+        &--1 {
+          font-size: 5rem;
+        }
+
+        &--2 {
+          font-size: 1.7rem;
+          margin-right: -18rem;
+        }
+      }
+    }
   }
 }

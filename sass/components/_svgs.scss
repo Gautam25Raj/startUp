@@ -1,11 +1,16 @@
 .cross {
   width: 22rem;
-  position: absolute;
+  position: relative;
   z-index: -1;
 
-  &--white{
-    top: -23%;
-    left: 32%;
+  &--pink {
+    top: -8.5rem;
+    left: 12.9rem;
+  }
+
+  &--green {
+    top: 5rem;
+    left: 14rem;
   }
 }
 
@@ -65,3 +70,91 @@
     right: -2%;
   }
 }
+
+@include respond(1350) {
+  .cross {
+    width: 21rem;
+
+    &--pink {
+      top: -8rem;
+    }
+  }
+
+  .dots {
+    &--down {
+      width: 11rem;
+      bottom: -1%;
+    }
+  }
+
+  .circle {
+    &--up {
+      left: 60%;
+    }
+  }
+}
+
+@include respond(1200) {
+  .dots {
+    &--up {
+      width: 11rem;
+    }
+  }
+
+  .square {
+    width: 11rem;
+
+    &--white {
+      right: 1rem;
+    }
+  }
+
+  .cross {
+    width: 20rem;
+
+    &--pink {
+      top: -7.5rem;
+      left: 12rem;
+    }
+  }
+}
+
+@include respond(1050) {
+  .circle{
+    width: 7.5rem;
+
+    &--up {
+      top: 12%;
+      left: 50%;
+    }
+  
+    &--down {
+      top: 74%;
+      left: 8%;
+    }
+  }
+
+  .dots {
+    width: 10rem;
+
+    &--up {
+      top: 18%;
+      right: 24%;
+    }
+  
+    &--down {
+      bottom: -2%;
+      right: -2.8%;
+    }
+  }
+
+  .square {
+    width: 10rem;
+  
+    &--white {
+      top: 28%;
+      right: 4rem;
+    }
+  }
+}
+
