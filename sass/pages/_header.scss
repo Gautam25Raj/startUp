@@ -7,7 +7,7 @@
   position: absolute;
   color: #ff6476;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 999;
 }
@@ -19,7 +19,7 @@
   width: 100vw;
   height: 100vh;
   filter: blur(20px);
-  background-image: url(../img/hero.png);
+  background-image: url(../img/hero-combined.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -101,9 +101,7 @@
 /////////////////////////////////////////////////
 @include respond(1350) {
   .social__conatainer {
-    &--big {
-      margin-right: 6%;
-    }
+    margin-right: 6%;
   }
 
   .social ul {
@@ -121,10 +119,12 @@
   }
 }
 
-@include respond(1350) {
+@include respond(1200) {
+  .deco-1{
+    background-image: url(../img/hero.png);
+  }
+
   .social__conatainer {
-    &--big {
-      margin-bottom: 1.5%;
-    }
+    margin-bottom: 1.5%;
   }
 }

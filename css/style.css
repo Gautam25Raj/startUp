@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "Gabriola";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Gabriola"), url("../vendor/gabriola Font Download.woff") format("woff"); }
+
+@font-face {
+  font-family: "Choplin";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Choplin"), url("../vendor/Choplin-Medium-DEMO.woff") format("woff"); }
+
 *,
 *::after,
 *::before {
@@ -298,12 +310,13 @@ ul li {
   animation-duration: 0.8s;
   animation-delay: 4.3s;
   animation-fill-mode: backwards;
-  animation-timing-function: ease-in; }
+  animation-timing-function: ease-in;
+  font-family: Gabriola, sans-serif; }
   .nav__bar__link {
     list-style: none;
     margin-left: 3.2rem;
     margin-top: 2rem;
-    font-size: 2.5rem; }
+    font-size: 3.5rem; }
     .nav__bar__link .link, .nav__bar__link .link:link, .nav__bar__link .link:visited {
       color: #fff;
       transition: color 0.3s; }
@@ -315,10 +328,10 @@ ul li {
       content: "";
       display: block;
       width: 0;
-      height: 2px;
+      height: 3px;
       background: #fff;
       transition: width 0.3s;
-      margin-top: 0.4rem; }
+      margin-top: -1.5rem; }
     .nav__bar__link .link:hover::after, .nav__bar__link .link:active::after {
       width: 100%; }
     .nav__bar__link .link:active::after {
@@ -335,17 +348,17 @@ ul li {
 @media (max-width: 1350px) {
   .nav__bar__link {
     margin-left: 3rem;
-    font-size: 2.4rem; } }
+    font-size: 3.2rem; } }
 
 @media (max-width: 1200px) {
   .nav__bar__link {
     margin-left: 2.8rem;
-    font-size: 2.35rem; } }
+    font-size: 3rem; } }
 
 @media (max-width: 1050px) {
   .nav__bar__link {
     margin-left: 2.5rem;
-    font-size: 2.3rem; } }
+    font-size: 2.8rem; } }
 
 .loading_text {
   font-family: cursive;
@@ -361,7 +374,7 @@ ul li {
   width: 100vw;
   height: 100vh;
   filter: blur(20px);
-  background-image: url(../img/hero.png);
+  background-image: url(../img/hero-combined.svg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -406,15 +419,17 @@ ul li {
     transform: translateY(-0.1rem); }
 
 @media (max-width: 1350px) {
-  .social__conatainer--big {
+  .social__conatainer {
     margin-right: 6%; }
   .social ul li {
     margin: 1.5rem; }
   .social ul svg, .social ul svg:link, .social ul svg:visited {
     width: 3.2rem; } }
 
-@media (max-width: 1350px) {
-  .social__conatainer--big {
+@media (max-width: 1200px) {
+  .deco-1 {
+    background-image: url(../img/hero.png); }
+  .social__conatainer {
     margin-bottom: 1.5%; } }
 
 .aboutUs__header {
