@@ -7,7 +7,9 @@
   z-index: 1;
   animation-name: upToDown;
   animation-duration: 0.8s;
+  animation-delay: 4.3s;
   animation-timing-function: ease-in;
+  animation-fill-mode: backwards;
 
   //HEADER HEADING WITH CROSS
   &--header {
@@ -54,7 +56,7 @@
     }
 
     //ABOUT US HEADER
-    &--about h1{
+    &--about h1 {
       font-size: 12rem;
       font-family: sans-serif;
       font-weight: 900;

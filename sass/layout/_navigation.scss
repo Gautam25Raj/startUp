@@ -7,6 +7,8 @@
   display: flex;
   animation-name: leftToRight;
   animation-duration: 0.8s;
+  animation-delay: 4.3s;
+  animation-fill-mode: backwards;
   animation-timing-function: ease-in;
 
   //CONTAINER OF EACH LINK (LI ELEMENT)

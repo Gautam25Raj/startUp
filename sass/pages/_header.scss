@@ -1,9 +1,27 @@
 /////////////////////////////////////////////////
+///////// LOADER
+/////////////////////////////////////////////////
+.loading_text {
+  font-family: cursive;
+  font-size: 10rem;
+  position: absolute;
+  color: #ff6476;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+/////////////////////////////////////////////////
 ///////// HEADER
 /////////////////////////////////////////////////
 .deco-1 {
   width: 100vw;
   height: 100vh;
+  filter: blur(20px);
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 //SOCIAL LINK AND BUTTON CONTAINER
@@ -19,6 +37,8 @@
   animation-name: rightToLeft;
   animation-duration: 0.8s;
   animation-timing-function: ease-in;
+  animation-delay: 4.2s;
+  animation-fill-mode: backwards;
 }
 
 //CONTAINER OF SOCIAL LINKS
@@ -89,7 +109,7 @@
   .social ul {
     & li {
       margin: 1.5rem;
-    }  
+    }
 
     svg {
       &,

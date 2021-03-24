@@ -9,10 +9,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  overflow: hidden;
-  background-image: url(../img/hero.png);
-  background-repeat: no-repeat;
-  background-size: cover; }
+  overflow: hidden; }
 
 a {
   text-decoration: none;
@@ -27,7 +24,9 @@ ul li {
   z-index: 1;
   animation-name: upToDown;
   animation-duration: 0.8s;
-  animation-timing-function: ease-in; }
+  animation-delay: 4.3s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: backwards; }
   .heading--header {
     text-align: center;
     margin-top: 18rem;
@@ -94,6 +93,46 @@ ul li {
       font-size: 1.7rem;
       margin-right: -18rem; } }
 
+@keyframes zoomInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0); }
+  80% {
+    transform: scale(1.4); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+@keyframes upToDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px); }
+  80% {
+    transform: translateY(40px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(40px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-40px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 .btn, .btn:link, .btn:visited {
   cursor: pointer;
   border: 0.4rem solid #fff;
@@ -144,7 +183,7 @@ ul li {
   position: absolute;
   animation-name: zoomInOut;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in; }
   .circle--up {
@@ -164,7 +203,7 @@ ul li {
   width: 12rem;
   animation-name: zoomInOut;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in; }
   .square--white {
@@ -172,9 +211,9 @@ ul li {
     right: 0;
     z-index: 1; }
   .square--about--white {
+    position: relative;
     width: 9rem;
-    top: 50%;
-    right: 21%;
+    left: 40rem;
     z-index: 1; }
 
 .dots {
@@ -182,7 +221,7 @@ ul li {
   width: 12rem;
   animation-name: zoomInOut;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in; }
   .dots--up {
@@ -257,6 +296,8 @@ ul li {
   display: flex;
   animation-name: leftToRight;
   animation-duration: 0.8s;
+  animation-delay: 4.3s;
+  animation-fill-mode: backwards;
   animation-timing-function: ease-in; }
   .nav__bar__link {
     list-style: none;
@@ -306,9 +347,23 @@ ul li {
     margin-left: 2.5rem;
     font-size: 2.3rem; } }
 
+.loading_text {
+  font-family: cursive;
+  font-size: 10rem;
+  position: absolute;
+  color: #ff6476;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999; }
+
 .deco-1 {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  filter: blur(20px);
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .social__conatainer {
   display: inline-flex;
@@ -321,7 +376,9 @@ ul li {
   z-index: 1;
   animation-name: rightToLeft;
   animation-duration: 0.8s;
-  animation-timing-function: ease-in; }
+  animation-timing-function: ease-in;
+  animation-delay: 4.2s;
+  animation-fill-mode: backwards; }
 
 .social ul {
   display: flex;

@@ -1,67 +1,67 @@
-//ANIMATION - FISRT THE ELEMENT IS INVISIBLE THEN BECOMES VISIBLE WITH SIZE INCREASING
-// @keyframes zoomInOut {
-//   0% {
-//     opacity: 0;
-//     transform: scale(0);
-//   }
+// ANIMATION - FISRT THE ELEMENT IS INVISIBLE THEN BECOMES VISIBLE WITH SIZE INCREASING
+@keyframes zoomInOut {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
 
-//   80% {
-//     transform: scale(1.4);
-//   }
+  80% {
+    transform: scale(1.4);
+  }
 
-//   100% {
-//     opacity: 1;
-//     transform: scale(1);
-//   }
-// }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
-//ANIMATION - COMING FROM UP SIDE
-// @keyframes upToDown {
-//   0% {
-//     opacity: 0;
-//     transform: translateY(-300px);
-//   }
+// ANIMATION - COMING FROM UP SIDE
+@keyframes upToDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-300px);
+  }
 
-//   80% {
-//     transform: translateY(40px);
-//   }
+  80% {
+    transform: translateY(40px);
+  }
 
-//   100% {
-//     opacity: 1;
-//     transform: translateY(0);
-//   }
-// }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-//ANIMATION - COMING FROM LEFT TO RIGHT
-// @keyframes leftToRight {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(-100px);
-//   }
+// ANIMATION - COMING FROM LEFT TO RIGHT
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
 
-//   80% {
-//     transform: translateX(40px);
-//   }
+  80% {
+    transform: translateX(40px);
+  }
 
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
-// }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
-//ANIMATION - COMING FROM RIGHT TO LEFT
-// @keyframes rightToLeft {
-//   0% {
-//     opacity: 0;
-//     transform: translateX(100px);
-//   }
+// ANIMATION - COMING FROM RIGHT TO LEFT
+@keyframes rightToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 
-//   80% {
-//     transform: translateX(-40px);
-//   }
+  80% {
+    transform: translateX(-40px);
+  }
 
-//   100% {
-//     opacity: 1;
-//     transform: translateX(0);
-//   }
-// }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

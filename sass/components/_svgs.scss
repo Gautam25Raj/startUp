@@ -27,7 +27,7 @@
   position: absolute;
   animation-name: zoomInOut;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in;
 
@@ -58,7 +58,7 @@
   width: 12rem;
   animation-name: zoomInOut;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in;
 
@@ -69,9 +69,9 @@
   }
 
   &--about--white {
+    position: relative;
     width: 9rem;
-    top: 50%;
-    right: 21%;
+    left: 40rem;
     z-index: 1;
   }
 }
@@ -82,7 +82,7 @@
   width: 12rem;
   animation-name: zoomInOut;
   animation-duration: 1s;
-  animation-delay: 0.5s;
+  animation-delay: 5s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in;
 
