@@ -1,17 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Zilla+Slab:wght@300;700&display=swap");
+
 @font-face {
   font-family: "Gabriola";
   font-style: normal;
   font-weight: normal;
   src: local("Gabriola"),
     url("../vendor/gabriola\ Font\ Download.woff") format("woff");
-}
-
-@font-face {
-  font-family: "Choplin";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Choplin"),
-    url("../vendor/Choplin-Medium-DEMO.woff") format("woff");
 }
 
 *,
@@ -27,14 +21,17 @@ html {
 }
 
 body {
-  overflow: hidden;
+  background-image: url(../img/hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 a {
   text-decoration: none;
-  color: black;
+  color: #fff;
 }
 
-ul li {
+li {
   list-style: none;
 }

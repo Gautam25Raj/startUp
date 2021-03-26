@@ -1,59 +1,62 @@
-.aboutUs__header {
-  height: 100vh;
-}
+// .aboutUs__header {
+//   height: 100vh;
+//   background-image: url(../img/hero.svg);
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-.team {
-  width: 68%;
-  height: 68%;
-  background-image: linear-gradient(to right, yellow, pink);
-  position: absolute;
-  bottom: 0;
-  right: -8rem;
-  transform: skewX(-15deg);
+// .team {
+//   width: 68%;
+//   height: 68%;
+//   background-image: linear-gradient(to right, yellow, pink);
+//   position: absolute;
+//   bottom: 0;
+//   right: -8rem;
+//   transform: skewX(-15deg);
 
-  h2 {
-    color: white;
-    font-size: 2.5rem;
-    text-align: center;
-    margin-top: 2rem;
-  }
+//   h2 {
+//     color: white;
+//     font-size: 2.5rem;
+//     text-align: center;
+//     margin-top: 2rem;
+//   }
 
-  &__container {
-    display: flex;
-    height: 100%;
-    align-items: center;
-    // height: 400px;
-    // margin: 50px 0;
-    margin-right: 0;
-    position: relative;
-    right: 6rem;
-  }
+//   &__container {
+//     display: flex;
+//     height: 100%;
+//     align-items: center;
+//     // height: 400px;
+//     // margin: 50px 0;
+//     margin-right: 0;
+//     position: relative;
+//     right: 6rem;
+//   }
 
-  &__member {
-    display: flex;
-    height: 80%;
-    flex-basis: 18%;
-    flex-direction: column;
+//   &__member {
+//     display: flex;
+//     height: 80%;
+//     flex-basis: 18%;
+//     flex-direction: column;
 
-    &:not(:last-child) {
-      margin-right: 2rem;
-    }
+//     &:not(:last-child) {
+//       margin-right: 2rem;
+//     }
 
-    &--1 {
-      flex-grow: 0.4;
-      background-color: black;
-    }
+//     &--1 {
+//       flex-grow: 0.4;
+//       background-color: black;
+//     }
 
-    &--2 {
-      flex-grow: 5;
-      background-image: url(/img/hero.png);
-      background-position: center;
-      // transform: skewX(15deg);
-    }
+//     &--2 {
+//       flex-grow: 5;
+//       background-image: url(/img/hero.png);
+//       background-position: center;
+//       // transform: skewX(15deg);
+//     }
 
-    &--3 {
-      flex-grow: 1;
-      background-color: black;
-    }
-  }
-}
+//     &--3 {
+//       flex-grow: 1;
+//       background-color: black;
+//     }
+//   }
+// }

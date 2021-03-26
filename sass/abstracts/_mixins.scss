@@ -2,7 +2,6 @@
 ///////// MEDIA QUERRY MIXIN
 /////////////////////////////////////////////////
 @mixin respond($breakpoint) {
-
   //FOR WIDTH OF 1350
   @if $breakpoint == 1350 {
     @media (max-width: 1350px) {
@@ -16,10 +15,37 @@
       @content;
     }
   }
-  
+
   //FOR WIDTH OF 1050
   @if $breakpoint == 1050 {
     @media (max-width: 1050px) {
+      @content;
+    }
+  }
+
+  //FOR WIDTH OF 850
+  @if $breakpoint == 850 {
+    @media (max-width: 850px) {
+      @content;
+    }
+  }
+
+  //FOR WIDTH OF 700
+  @if $breakpoint == 700 {
+    @media (max-width: 700px) {
+      @content;
+    }
+  }
+
+  //FOR WIDTH OF 550
+  @if $breakpoint == 550 {
+    @media (max-width: 550px) {
+      @content;
+    }
+  }
+
+  @if $breakpoint == 400 {
+    @media (max-width: 400px) {
       @content;
     }
   }

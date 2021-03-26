@@ -1,98 +1,109 @@
 /////////////////////////////////////////////////
 ///////// MAIN NAVIGATION STYLE
 /////////////////////////////////////////////////
-
-//CONATAINER OF LINKS (UL ELEMENT)
 .nav__bar {
   display: flex;
+  margin-top: 2rem;
+  padding: 0 4rem;
   animation-name: leftToRight;
   animation-duration: 0.8s;
-  animation-delay: 4.3s;
+  animation-delay: 0.3s;
   animation-fill-mode: backwards;
   animation-timing-function: ease-in;
-  font-family: Gabriola, sans-serif;
 
   //CONTAINER OF EACH LINK (LI ELEMENT)
   &__link {
-    list-style: none;
-    margin-left: 3.2rem;
-    margin-top: 2rem;
-    font-size: 3.5rem;
+    font-size: 3.4rem;
 
-    //STYLE OF EVERY LINK (ANCHOR TAG)
-    .link {
-      &,
-      &:link,
-      &:visited {
-        color: #fff;
-        transition: color 0.3s;
-      }
+    &:not(:last-child) {
+      margin-right: 3.2rem;
+    }
+  }
+}
 
-      //WHEN HOME PAGE IS ACTIVE
-      &--pink--active {
-        &,
-        &:link,
-        &:visited {
-          color: #ff6476;
-        }
-      }
+.menu {
+  display: none;
+  background-color: transparent;
+  width: 50px;
+  height: 50px;
+  border: 0;
+  cursor: pointer;
+}
 
-      //WHEN ABOUT US PAGE IS ACTIVE
-      &--green--active {
-        &,
-        &:link,
-        &:visited {
-          color: #76ff64;
-        }
-      }
+//STYLE OF EVERY LINK (ANCHOR TAG)
+.link {
+  //WHEN HOME PAGE IS ACTIVE
+  &--pink--active {
+    &,
+    &:link,
+    &:visited {
+      color: #ff6476;
+    }
+  }
 
-      //LINE BELOW EVERY LINKS
+  //WHEN ABOUT US PAGE IS ACTIVE
+  &--green--active {
+    &,
+    &:link,
+    &:visited {
+      color: #76ff64;
+    }
+  }
+
+  //LINE BELOW EVERY LINKS
+  &::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #fff;
+    transition: width 0.3s;
+    margin-top: -1.5rem;
+  }
+
+  &:hover::after,
+  &:active::after {
+    width: 100%;
+  }
+
+  &:active::after {
+    transform: translateY(-3px);
+  }
+
+  //COLOR OF LINKS WHEN HOVERED IN HOME PAGE
+  &--pink {
+    &:hover {
+      color: #ff6476;
+    }
+
+    & {
       &::after {
-        content: "";
-        display: block;
-        width: 0;
-        height: 3px;
-        background: #fff;
-        transition: width 0.3s;
-        margin-top: -1.5rem;
-      }
-
-      &:hover::after,
-      &:active::after {
-        width: 100%;
-      }
-
-      &:active::after {
-        transform: translateY(-3px);
-      }
-
-      //COLOR OF LINKS WHEN HOVERED IN HOME PAGE
-      &--pink {
-        &:hover {
-          color: #ff6476;
-        }
-
-        & {
-          &::after {
-            background: #ff6476;
-          }
-        }
-      }
-
-      //COLOR OF LINKS WHEN HOVERED IN ABOUT US PAGE
-      &--green {
-        &:hover {
-          color: #76ff64;
-        }
-
-        & {
-          &::after {
-            background: #76ff64;
-          }
-        }
+        background: #ff6476;
       }
     }
   }
+
+  //COLOR OF LINKS WHEN HOVERED IN ABOUT US PAGE
+  &--green {
+    &:hover {
+      color: #76ff64;
+    }
+
+    & {
+      &::after {
+        background: #76ff64;
+      }
+    }
+  }
+}
+
+.logo {
+  width: 200px;
+  animation-name: rightToLeft;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
 }
 
 /////////////////////////////////////////////////
@@ -101,7 +112,6 @@
 @include respond(1350) {
   .nav__bar {
     &__link {
-      margin-left: 3rem;
       font-size: 3.2rem;
     }
   }
@@ -110,7 +120,7 @@
 @include respond(1200) {
   .nav__bar {
     &__link {
-      margin-left: 2.8rem;
+      margin-right: 3rem;
       font-size: 3rem;
     }
   }
@@ -119,8 +129,88 @@
 @include respond(1050) {
   .nav__bar {
     &__link {
-      margin-left: 2.5rem;
+      margin-right: 2.5rem;
       font-size: 2.8rem;
     }
+  }
+}
+
+@include respond(850) {
+  nav {
+    position: relative;
+  }
+
+  .nav__container {
+    background-color: yellow;
+    height: 60px;
+  }
+
+  .nav__bar {
+    flex-direction: column;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    background-color: $home-pink;
+    width: 100%;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    clip-path: circle(0px at 4% 4%);
+    -webkit-clip-path: circle(0px at 4% 4%);
+    transition: all 0.8s ease-out;
+    z-index: 999;
+
+    &__link {
+      font-size: 3.4rem;
+      margin-right: 0rem;
+      visibility: hidden;
+      transition: visibility 1s;
+
+      &:not(:last-child) {
+        margin-right: 0rem;
+      }
+    }
+
+    &.open {
+      clip-path: circle(300vw at 4% 4%);
+      -webkit-clip-path: circle(300vw at 4% 4%);
+
+      .nav__bar__link {
+        visibility: visible;
+      }
+    }
+  }
+
+  .menu {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 1rem;
+    transform: translateY(-50%);
+    z-index: 1000;
+  }
+
+  .menu:focus {
+    outline: none;
+  }
+
+  .link {
+    &,
+    &:link,
+    &:visited,
+    &:hover {
+      color: #fff;
+      margin: 0;
+      padding: 2rem 6rem;
+      background-color: black;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .logo {
+    width: 120px;
   }
 }

@@ -1,41 +1,29 @@
-/////////////////////////////////////////////////
-///////// ALL SVGS SETTING
-/////////////////////////////////////////////////
+// /////////////////////////////////////////////////
+// ///////// ALL SVGS SETTING
+// /////////////////////////////////////////////////
+.svg_container {
+  overflow: hidden;
+  width: 5rem;
+}
 
-//CROSS SVG USED IN HEADING BACK OF EVERY PAGE
-.cross {
-  width: 22rem;
-  position: relative;
-  z-index: -1;
-
-  //CROSS SVG USED IN HEADING BACK OF HOME PAGE
-  &--pink {
-    top: -8.5rem;
-    left: 12.9rem;
-  }
-
-  //CROSS SVG USED IN HEADING BACK OF ABOUT US PAGE
-  &--green {
-    top: 5rem;
-    left: 12rem;
-  }
+.svg {
+  animation-name: zoomInOut;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
+  animation-timing-function: ease-in;
 }
 
 //CIRCLE SVG
 .circle {
   width: 8rem;
   position: absolute;
-  animation-name: zoomInOut;
-  animation-duration: 1s;
-  animation-delay: 5s;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in;
+  z-index: -5;
 
   //CIRCLE IN UPPER DIRECTION
   &--up {
     top: 5%;
     left: 65%;
-    z-index: 1;
   }
 
   //CIRCLE IN LOWER DIRECTION
@@ -48,31 +36,6 @@
   &--about--up {
     top: 10%;
     left: 65%;
-    z-index: 1;
-  }
-}
-
-//SQUARE SVG
-.square {
-  position: absolute;
-  width: 12rem;
-  animation-name: zoomInOut;
-  animation-duration: 1s;
-  animation-delay: 5s;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in;
-
-  &--white {
-    top: 20%;
-    right: 0;
-    z-index: 1;
-  }
-
-  &--about--white {
-    position: relative;
-    width: 9rem;
-    left: 40rem;
-    z-index: 1;
   }
 }
 
@@ -80,11 +43,8 @@
 .dots {
   position: absolute;
   width: 12rem;
-  animation-name: zoomInOut;
-  animation-duration: 1s;
-  animation-delay: 5s;
-  animation-fill-mode: backwards;
-  animation-timing-function: ease-in;
+  z-index: -5;
+  overflow: hidden;
 
   //DOTS IN HOME UPPER DIRECTION
   &--up {
@@ -94,8 +54,14 @@
 
   //DOTS IN HOME LOWER DIRECTION
   &--down {
-    bottom: -2%;
-    right: -2%;
+    bottom: 0;
+    right: 0;
+
+    img {
+      position: relative;
+      top: 0.4rem;
+      right: -3.2rem;
+    }
   }
 
   //DOTS IN ABOUT UP
@@ -112,6 +78,24 @@
   }
 }
 
+//SQUARE SVG
+.square {
+  position: absolute;
+  width: 12rem;
+  z-index: -5;
+
+  &--white {
+    top: 20%;
+    right: 0;
+  }
+
+  &--about--white {
+    position: relative;
+    width: 9rem;
+    left: 40rem;
+  }
+}
+
 .message-box {
   width: 17rem;
   transform: skewX(15deg);
@@ -124,18 +108,14 @@
 ///////// MEDIA QUERRIES
 /////////////////////////////////////////////////
 @include respond(1350) {
-  .cross {
-    width: 21rem;
-
-    &--pink {
-      top: -8rem;
-    }
-  }
-
   .dots {
     &--down {
       width: 11rem;
-      bottom: -1%;
+
+      img {
+        top: 0.6rem;
+        right: -3rem;
+      }
     }
   }
 
@@ -150,6 +130,7 @@
   .dots {
     &--up {
       width: 11rem;
+      top: 20%;
     }
   }
 
@@ -160,52 +141,83 @@
       right: 1rem;
     }
   }
-
-  .cross {
-    width: 20rem;
-
-    &--pink {
-      top: -7.5rem;
-      left: 12rem;
-    }
-  }
 }
 
 @include respond(1050) {
-  .circle {
-    width: 7.5rem;
-
+  .dots {
     &--up {
-      top: 12%;
-      left: 50%;
-    }
-
-    &--down {
-      top: 74%;
-      left: 8%;
+      display: none;
     }
   }
 
-  .dots {
+  .circle {
     width: 10rem;
-
     &--up {
-      top: 18%;
-      right: 24%;
+      left: 65%;
     }
 
     &--down {
-      bottom: -2%;
-      right: -2.8%;
+      left: 10%;
+      top: 65%;
     }
   }
 
   .square {
-    width: 10rem;
-
+    width: 12rem;
     &--white {
-      top: 28%;
-      right: 4rem;
+      top: 30%;
+    }
+  }
+}
+
+@include respond(850) {
+  .dots {
+    &--down {
+      width: 12rem;
+      img {
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+
+  .circle {
+    width: 10rem;
+    &--up {
+      top: 10%;
+      left: 80%;
+    }
+
+    &--down {
+      left: 10%;
+      top: 70%;
+    }
+  }
+
+  .square {
+    width: 12rem;
+    &--white {
+      display: none;
+    }
+  }
+}
+
+@include respond(700) {
+  .circle {
+    &--down {
+      left: 10%;
+      top: 75%;
+    }
+  }
+}
+
+@include respond(550) {
+  .circle {
+    width: 8rem;
+
+    &--down {
+      left: 10%;
+      top: 75%;
     }
   }
 }

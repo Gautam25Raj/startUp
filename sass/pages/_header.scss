@@ -1,130 +1,32 @@
-/////////////////////////////////////////////////
-///////// LOADER
-/////////////////////////////////////////////////
-.loading_text {
-  font-family: cursive;
-  font-size: 10rem;
-  position: absolute;
-  color: #ff6476;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 999;
-}
-
-/////////////////////////////////////////////////
-///////// HEADER
-/////////////////////////////////////////////////
-.deco-1 {
-  width: 100vw;
+.container {
   height: 100vh;
-  filter: blur(20px);
-  background-image: url(../img/hero-combined.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-//SOCIAL LINK AND BUTTON CONTAINER
-.social__conatainer {
-  display: inline-flex;
-  flex-direction: column;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin-bottom: 1%;
-  margin-right: 5%;
-  z-index: 1;
-  animation-name: rightToLeft;
-  animation-duration: 0.8s;
-  animation-timing-function: ease-in;
-  animation-delay: 4.2s;
-  animation-fill-mode: backwards;
-}
-
-//CONTAINER OF SOCIAL LINKS
-.social ul {
   display: flex;
-  flex-direction: row;
-
-  //EACH SOCIAL ELEMENT
-  & li {
-    margin: 2rem;
-  }
-
-  //SVG SOCIAL LINK ELEMENTS
-  svg {
-    &,
-    &:link,
-    &:visited {
-      width: 3.4rem;
-      border-radius: 5px;
-      fill: #fff;
-      padding: 0.1rem;
-      transition: background-color 0.25s;
-    }
-  }
-
-  //FACEBOOK HOVERED
-  .facebook:hover {
-    background-color: #3b5998;
-    transform: translateY(-0.3rem) rotate(-20deg);
-  }
-
-  //INSTAGRAM HOVERED
-  .insta:hover {
-    background-image: linear-gradient(
-      #8a3ab9,
-      #bc2a8d,
-      #e95950,
-      #fbad50,
-      #fccc63
-    );
-    transform: translateY(-0.3rem) rotate(-20deg);
-  }
-
-  //TWITTER HOVERED
-  .twitter:hover {
-    background-color: #1da1f2;
-    transform: translateY(-0.3rem) rotate(-20deg);
-  }
-
-  //SOCIAL WHEN CLICKED
-  .twitter:active,
-  .facebook:active,
-  .insta:active {
-    transform: translateY(-0.1rem);
-  }
+  flex-direction: column;
+  position: relative;
 }
 
-/////////////////////////////////////////////////
-///////// MEDIA QUERRIES
-/////////////////////////////////////////////////
-@include respond(1350) {
-  .social__conatainer {
-    margin-right: 6%;
-  }
-
-  .social ul {
-    & li {
-      margin: 1.5rem;
-    }
-
-    svg {
-      &,
-      &:link,
-      &:visited {
-        width: 3.2rem;
-      }
-    }
-  }
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  font-family: gabriola;
 }
 
-@include respond(1200) {
-  .deco-1{
-    background-image: url(../img/hero.png);
-  }
+.head__conatiner {
+  display: flex;
+  justify-content: center;
+}
 
-  .social__conatainer {
-    margin-bottom: 1.5%;
+.social__container {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+@include respond(850) {
+  .social__container {
+    justify-content: flex-start;
+    align-items: center;
   }
 }
