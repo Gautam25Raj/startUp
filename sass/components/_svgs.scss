@@ -7,6 +7,7 @@
 }
 
 .svg {
+  position: absolute;
   animation-name: zoomInOut;
   animation-duration: 1s;
   animation-delay: 0.8s;
@@ -14,10 +15,15 @@
   animation-timing-function: ease-in;
 }
 
+.mac {
+  width: 90%;
+  right: 0;
+  z-index: -99;
+}
+
 //CIRCLE SVG
 .circle {
   width: 8rem;
-  position: absolute;
   z-index: -5;
 
   //CIRCLE IN UPPER DIRECTION
@@ -37,11 +43,15 @@
     top: 10%;
     left: 65%;
   }
+
+  &--about--down {
+    bottom: 20%;
+    left: 10%;
+  }
 }
 
 //DOTS SVG
 .dots {
-  position: absolute;
   width: 12rem;
   z-index: -5;
   overflow: hidden;
@@ -66,12 +76,14 @@
 
   //DOTS IN ABOUT UP
   &--about--up {
-    left: 46%;
+    z-index: 1;
+    left: 44%;
     top: 56%;
   }
 
   //DOTS IN ABOUT DOWN
   &--about--down {
+    z-index: 1;
     width: 16rem;
     right: 0;
     bottom: 0;
@@ -80,7 +92,6 @@
 
 //SQUARE SVG
 .square {
-  position: absolute;
   width: 12rem;
   z-index: -5;
 
@@ -90,18 +101,17 @@
   }
 
   &--about--white {
-    position: relative;
+    z-index: 1;
     width: 9rem;
-    left: 40rem;
+    bottom: 30%;
+    right: 10%;
   }
 }
 
 .message-box {
   width: 17rem;
-  transform: skewX(15deg);
-  position: absolute;
-  top: -10rem;
-  left: 50%;
+  top: 26%;
+  right: 20%;
 }
 
 /////////////////////////////////////////////////

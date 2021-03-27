@@ -35,3 +35,13 @@ a {
 li {
   list-style: none;
 }
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+  font-family: gabriola;
+}
+
+.head__conatiner {
+  display: flex;
+}

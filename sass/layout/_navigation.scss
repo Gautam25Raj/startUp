@@ -37,7 +37,7 @@
     &,
     &:link,
     &:visited {
-      color: #ff6476;
+      color: $home-pink;
     }
   }
 
@@ -73,12 +73,12 @@
   //COLOR OF LINKS WHEN HOVERED IN HOME PAGE
   &--pink {
     &:hover {
-      color: #ff6476;
+      color: $home-pink;
     }
 
     & {
       &::after {
-        background: #ff6476;
+        background: $home-pink;
       }
     }
   }
