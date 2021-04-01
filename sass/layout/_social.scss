@@ -25,15 +25,7 @@ svg {
     border-radius: 5px;
     fill: #fff;
     padding: 0.1rem;
-    transition: background-color 0.4s, transform 0.4s;
-  }
-}
-
-.social__link a:focus {
-  outline: none;
-  svg {
-    transform: scale(1.2);
-    background-color: grey;
+    transition: background-color 0.4s, transform 0.2s;
   }
 }
 
@@ -65,7 +57,7 @@ svg {
 .twitter:active,
 .facebook:active,
 .insta:active {
-  transform: translateY(-0.1rem);
+  transform: translateY(-0.1rem) rotate(0);
 }
 
 /////////////////////////////////////////////////

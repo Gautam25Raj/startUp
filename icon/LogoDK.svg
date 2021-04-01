@@ -1,32 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg width="100%" height="100%" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
-    <g transform="matrix(1,0,0,1,-1,0)">
-        <rect x="0" y="0" width="1920" height="1080" style="fill:rgb(0,0,0,0);"/>
-    </g>
-    <g transform="matrix(1,0,0,1,-217.408,91.8858)">
+<svg width="100%" height="100%" viewBox="0 0 1920 720" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1.51351,3.04994e-21,0,1.67941,-848.521,-380.247)">
         <rect x="560.632" y="226.418" width="80.556" height="428.723" style="fill:rgb(0,255,201);"/>
     </g>
-    <g transform="matrix(1.12784,0,0,1,-368.002,-24.1698)">
-        <rect x="774.994" y="342.473" width="120.152" height="428.723" style="fill:rgb(0,255,201);"/>
+    <g transform="matrix(1.03819,0,0,1.17983,-36.662,-276.064)">
+        <path d="M272.712,594.677L470.266,777.469L470.266,844.246L272.712,844.246L272.712,594.677ZM470.266,627.527L379.924,543.936L470.266,456.197L470.266,627.527ZM470.266,302.691L272.712,494.552L272.712,233.987L470.266,233.987L470.266,302.691Z" style="fill:rgb(0,255,201);"/>
     </g>
-    <g transform="matrix(-1.00645,0,0,1,1872.06,-24.1698)">
-        <path d="M1237.85,342.473C1120.97,342.473 1026.22,438.446 1026.22,556.835C1026.22,675.224 1120.97,771.196 1237.85,771.196L1237.85,556.835L1237.85,342.473Z" style="fill:rgb(0,255,201);"/>
+    <g transform="matrix(1.03819,0,0,1.17983,-36.662,-276.064)">
+        <path d="M447.873,756.749L530.603,833.297C504.263,840.434 476.521,844.246 447.873,844.246L447.873,756.749ZM447.873,606.807L447.873,477.945L635.357,295.863C710.108,351.582 758.386,439.809 758.386,539.117C758.386,637.871 710.644,725.668 636.604,781.436L447.873,606.807ZM447.873,324.438L447.873,233.987C476.275,233.987 503.787,237.734 529.923,244.753L447.873,324.438Z" style="fill:rgb(0,255,201);"/>
     </g>
-    <g transform="matrix(0.705208,0.709,-1.06222,1.05654,312.239,-776.379)">
-        <rect x="1042.6" y="264.648" width="76.46" height="275.352" style="fill:rgb(0,0,0,0);"/>
-    </g>
-    <g transform="matrix(-0.687847,0.725855,-1.08747,-1.03053,1844.17,298.01)">
-        <rect x="1042.6" y="264.648" width="76.46" height="275.352" style="fill:rgb(0,0,0,0);"/>
-    </g>
-    <g transform="matrix(1.1599,0,0,1.1599,258.68,208.649)">
+    <g transform="matrix(1.75552,3.53762e-21,0,1.94794,-127.958,-184.154)">
         <text x="523.801px" y="234.158px" style="font-family:'UniSansHeavyItalicCAPS', 'Uni Sans';font-weight:900;font-style:italic;font-size:187.513px;fill:rgb(0,255,201);">DEV<tspan x="873.701px " y="234.158px ">S</tspan></text>
         <text x="523.801px" y="459.174px" style="font-family:'UniSansHeavyItalicCAPS', 'Uni Sans';font-weight:900;font-style:italic;font-size:187.513px;fill:rgb(0,255,201);">KY<tspan x="747.317px 868.45px " y="459.174px 459.174px ">AB</tspan>IN</text>
     </g>
-    <g transform="matrix(0.407015,0,0,0.308313,622.35,379.957)">
+    <g transform="matrix(0.616021,1.24137e-21,0,0.517782,422.459,103.541)">
         <rect x="869.078" y="505.523" width="697.517" height="27.142" style="fill:white;"/>
     </g>
-    <g transform="matrix(0.423341,0,0,0.423341,545.327,321.082)">
+    <g transform="matrix(0.640729,1.29116e-21,0,0.710961,305.884,4.66581)">
         <text x="1721.27px" y="544.184px" style="font-family:'UniSansHeavyItalicCAPS', 'Uni Sans';font-weight:900;font-style:italic;font-size:76.45px;fill:rgb(0,255,201);">.<tspan x="1740.08px " y="544.184px ">c</tspan>om</text>
     </g>
 </svg>

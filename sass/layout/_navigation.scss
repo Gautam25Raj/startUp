@@ -46,7 +46,16 @@
     &,
     &:link,
     &:visited {
-      color: #76ff64;
+      color: $about-green;
+    }
+  }
+
+  //WHEN ABOUT US PAGE IS ACTIVE
+  &--blue--active {
+    &,
+    &:link,
+    &:visited {
+      color: $contact-blue;
     }
   }
 
@@ -86,19 +95,35 @@
   //COLOR OF LINKS WHEN HOVERED IN ABOUT US PAGE
   &--green {
     &:hover {
-      color: #76ff64;
+      color: $about-green;
     }
 
     & {
       &::after {
-        background: #76ff64;
+        background: $about-green;
+      }
+    }
+  }
+
+  //COLOR OF LINKS WHEN HOVERED IN CONTACT PAGE
+  &--blue {
+    &:hover {
+      color: $contact-blue;
+    }
+
+    & {
+      &::after {
+        background: $contact-blue;
       }
     }
   }
 }
 
 .logo {
-  width: 200px;
+  width: 18rem;
+  position: absolute;
+  top: 2rem;
+  right: 5rem;
   animation-name: rightToLeft;
   animation-duration: 1s;
   animation-delay: 0.3s;
@@ -115,6 +140,12 @@
       font-size: 3.2rem;
     }
   }
+
+  .logo {
+    width: 16rem;
+    top: 2rem;
+    right: 4rem;
+  }
 }
 
 @include respond(1200) {
@@ -123,6 +154,12 @@
       margin-right: 3rem;
       font-size: 3rem;
     }
+  }
+
+  .logo {
+    width: 15rem;
+    top: 2rem;
+    right: 4rem;
   }
 }
 
@@ -133,6 +170,12 @@
       font-size: 2.8rem;
     }
   }
+
+  .logo {
+    width: 12rem;
+    top: 2rem;
+    right: 3rem;
+  }
 }
 
 @include respond(850) {
@@ -141,7 +184,7 @@
   }
 
   .nav__container {
-    background-color: yellow;
+    background-image: linear-gradient(to left, #c55c77, #666dbb);
     height: 60px;
   }
 
@@ -212,5 +255,11 @@
 
   .logo {
     width: 120px;
+  }
+
+  .logo {
+    width: 11rem;
+    top: 0.8rem;
+    right: 3rem;
   }
 }

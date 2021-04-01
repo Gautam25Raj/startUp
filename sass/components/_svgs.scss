@@ -15,10 +15,26 @@
   animation-timing-function: ease-in;
 }
 
+.side-bar {
+  height: 100vh;
+  width: 100vw;
+  z-index: -9999;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    right: 0;
+    height: 100%;
+  }
+}
+
 .mac {
-  width: 90%;
   right: 0;
   z-index: -99;
+
+  & img {
+    width: 60vw;
+  }
 }
 
 //CIRCLE SVG
@@ -47,6 +63,16 @@
   &--about--down {
     bottom: 20%;
     left: 10%;
+  }
+
+  &--contact--up {
+    top: 15%;
+    left: 5%;
+  }
+
+  &--contact--down {
+    bottom: 15%;
+    left: 65%;
   }
 }
 
@@ -114,6 +140,12 @@
   right: 20%;
 }
 
+.cont_girl {
+  width: 45%;
+  bottom: 0;
+  left: 0;
+}
+
 /////////////////////////////////////////////////
 ///////// MEDIA QUERRIES
 /////////////////////////////////////////////////
@@ -134,6 +166,21 @@
       left: 60%;
     }
   }
+
+  .side-bar {
+    img {
+      right: -4rem;
+    }
+  }
+
+  //SQUARE SVG
+  .square {
+    &--white {
+      width: 11rem;
+      top: 20%;
+      right: 0;
+    }
+  }
 }
 
 @include respond(1200) {
@@ -151,6 +198,19 @@
       right: 1rem;
     }
   }
+
+  .side-bar {
+    img {
+      right: -6rem;
+    }
+  }
+
+    //SQUARE SVG
+    .square {
+      &--white {
+        width: 10rem;
+      }
+    }
 }
 
 @include respond(1050) {
@@ -173,9 +233,15 @@
   }
 
   .square {
-    width: 12rem;
+    width: 10rem;
     &--white {
-      top: 30%;
+      top: 20%;
+    }
+  }
+
+  .side-bar {
+    img {
+      right: -12rem;
     }
   }
 }
@@ -209,6 +275,10 @@
     &--white {
       display: none;
     }
+  }
+
+  .side-bar {
+    display: none;
   }
 }
 
