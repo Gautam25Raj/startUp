@@ -16,16 +16,16 @@
     display: flex;
     justify-content: space-between;
   }
-}
 
-//SVG SOCIAL LINK ELEMENTS
-svg {
-  & {
-    width: 3.8rem;
-    border-radius: 5px;
-    fill: #fff;
-    padding: 0.1rem;
-    transition: background-color 0.4s, transform 0.2s;
+  //SVG SOCIAL LINK ELEMENTS
+  svg {
+    & {
+      width: 3.8rem;
+      border-radius: 5px;
+      fill: #fff;
+      // padding: 0.1rem;
+      transition: background-color 0.4s, transform 0.2s;
+    }
   }
 }
 
